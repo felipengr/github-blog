@@ -9,6 +9,12 @@ export const ProfileContainer = styled.section`
     padding: 2rem 2.5rem;
     display: flex;
     gap: 2rem;
+
+    @media(max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 `
 
 export const ProfilePicture = styled.img`
@@ -42,6 +48,14 @@ export const ProfileDetails = styled.div`
             gap: 1.5rem;
             flex-wrap: wrap;
             margin-top: auto;
+
+            @media(max-width: 768px) {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 0.75rem;
+                margin-top: 1rem;
+            }
 
             li {
                 display: flex;
